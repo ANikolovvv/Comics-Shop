@@ -27,7 +27,18 @@ nav ul li a{
     text-decoration: none;
 }
 
-
+ .option{
+    color: rgb(252, 248, 248);
+    text-align: right;
+    padding: 20px;
+   
+ }
+ .option label{
+    font-weight: bold
+ }
+ .option option{
+    color: darkred;
+ }
 
 
 h1{
