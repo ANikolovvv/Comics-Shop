@@ -16,11 +16,11 @@ function valid() {
     const passMatch = regexPassword.test(enterPassword.value);
     if (match === false) {
       enter.style.borderColor = "red";
-      enter.placeholder = "Поне една буква,@ и точка!";
+     
     }
     if (passMatch === false) {
       enterPassword.style.borderColor = "red";
-      enterPassword.placeholder = "Минимум 3 букви!";
+     
     }
     enter.value = "";
     enterPassword.value = "";
@@ -48,19 +48,19 @@ function valid() {
 
     if (im === false) {
       regEmail.style.borderColor = "red";
-      regEmail.placeholder = "Поне една буква,@ и точка!";
+     
     }
     if (fn === false) {
       vPassword.style.borderColor = "red";
-      vPassword.placeholder = "Минимум 3 букви!";
+     
     } 
      if (ln === false) {
       validPassword.style.borderColor = "red";
-      validPassword.placeholder = "Минимум 3 букви!";
+    
     }
      if (vPassword.value !== validPassword.value) {
       validPassword.style.borderColor = "red";
-      validPassword.placeholder = "паролите не са еднакви!";
+     
     }
     regEmail.value='';
     vPassword.value='';
