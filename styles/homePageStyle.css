@@ -1,0 +1,29 @@
+
+p{ 
+    color: honeydew;
+    text-align: center;
+    font-size: 30px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   
+}
+
+h1{
+    text-align: center;
+ margin: 10;
+  color: darkred;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+  background-color: white;
+  
+}
+
+.home{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    transition: 12s;
+}
+
+
