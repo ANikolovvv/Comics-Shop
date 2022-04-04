@@ -1,0 +1,42 @@
+
+#details-page{
+    margin: 10px ;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1rem;
+    border-color: #03234c;
+    background: #000000;
+    box-shadow: 0 2px 2px #131518;
+    text-decoration: none;
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
+#details-page .type{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(0, 32, 173);
+    border-radius: 1rem;
+    
+}
+.comic-description{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.a-details{
+    background-color: #5212c1;
+    font-weight: bold;
+    width: 150px;
+	height: 70px;
+	cursor: pointer;
+	
+    border-radius: 3px;
+	display: inline;
+	align-items: center;
+	justify-content: center;
+    color: rgb(225, 225, 225);
+    font-family: "Lato";
+    font-size: 28px;
+    margin-bottom: 5px;
+     margin-top: 20px;
+}
