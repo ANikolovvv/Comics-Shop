@@ -1,6 +1,6 @@
 import { html } from "../lib.js";
 
-export const templateDetails = (item) => html`
+export const templateDetails = (item,user) => html`
   <section id="details-page" class="details">
     <div class="comic-information">
       
@@ -11,7 +11,7 @@ export const templateDetails = (item) => html`
     <div class="comic-description">
       <h3>Description:</h3>
       <p>${item.description}</p>
-      <a class="a-details" href="/edit/${item._id}">Buy</a>
+      ${user ? html`<a class="a-details" href="/">Buy</a>`:''}
     </div>
   </section>
 `;
