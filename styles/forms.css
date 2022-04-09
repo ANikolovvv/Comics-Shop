@@ -5,8 +5,18 @@ body {
 
 form {
 	max-width: 30rem;
+	margin: 20px;
+   
+	
 }
-
+.vhide{
+	color: rgb(255, 255, 255);
+}
+.login{
+	color: #CCC;
+	background-color: #ac272e;
+	border-radius: 5px;
+}
 form, form fieldset, form legend, form label, form input, form textarea, form select {
 	display: block;
 	width: 100%;
@@ -25,8 +35,9 @@ form fieldset {
 	box-shadow: 0 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 form legend {
-	border: 2px solid #666;
-	background-color: #234465;
+	margin: 10px;
+	border: 2px solid rgb(251, 243, 243);
+	background-color: #ac272e;
 	color: white;
 	border-radius: 1rem;
 	box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.1);
@@ -111,7 +122,10 @@ form textarea:focus {
 	outline: none;
 	border-color: #090;
 }
-
+p > span{
+   color: #87070d;
+   background: #FFF;
+}
 .description {
 	width: 17rem;
 	height: 10vh;
@@ -141,5 +155,15 @@ form textarea:focus {
 }
 
 .field .input:hover {
-	background: #c4c1c1;
+	background: #fffefe;
+}
+.click{
+	color: rgb(235, 242, 242);
+	background-color: #ac272e;
+	border-radius: 5px;
+}
+.register{
+	color: rgb(254, 239, 239);
+	background-color: #ac272e;
+	border-radius: 5px;
 }
