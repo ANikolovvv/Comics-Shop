@@ -3,13 +3,18 @@ import { catalogPage } from "./catalog.js";
 import { detailsPage } from "./details.js";
 import { homePage } from "./home.js";
 import { searchPage } from "./search.js";
+import { loginPage } from "./login.js";
+import { registerPage } from "./register.js";
+import { resLogout } from "./requests.js";
 
 const root = document.querySelector("#site-content");
-//document.getElementById("logoutBtn").addEventListener("click", logoutUser);
+document.getElementById("logoutBtn").addEventListener("click", logoutUser);
 
 userNav()
 page(decorateContex);
 page("/", homePage);
+page("/login",loginPage);
+page("/register",registerPage);
 page("/search",searchPage);
 page("/catalog", catalogPage);
 page("/details/:id", detailsPage);
@@ -23,21 +28,24 @@ function decorateContex(ctx, next) {
 }
 
 export function userNav() {
+  const allNavBtn=Array.from(document.querySelectorAll("nav div a"));
   const user = JSON.parse(localStorage.getItem("user"));
-  // if (user) {
-  //   const welcome=document.querySelector('#user span');
-  //   welcome.textContent=`Welcome, ${user.email}`
-  //   document.getElementById("user").style.display = "inline-block";
-  //   document.getElementById("guest").style.display = "none";
-  // } else {
-  //   document.getElementById("user").style.display = "none";
-  //   document.getElementById("guest").style.display = "inline-block";
-  // }
+  console.log(allNavBtn)
+   if(user){
+       allNavBtn[2].style.display='inline-block';
+       allNavBtn[3].style.display='none';
+       allNavBtn[4].style.display='none';
+   }else{
+    allNavBtn[2].style.display='none';
+    allNavBtn[3].style.display='inline-block';
+    allNavBtn[4].style.display='inline-block';
+   }
+
 }
 
 async function logoutUser() {
- // const token = JSON.parse(localStorage.getItem("user"));
-  //await resLogout(token.accessToken);
-  page.redirect("/");
+ const token = JSON.parse(localStorage.getItem("user"));
+  await resLogout(token.accessToken);
+  page.redirect("/catalog");
   userNav()
 }
