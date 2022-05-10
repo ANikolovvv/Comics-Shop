@@ -1,2 +1,2 @@
-# Comics-Shop
-This is a website for comics book.
+# Comics-Shop Prototype
+This is a prototype website for comics books, which is build with vanilla javascript.
